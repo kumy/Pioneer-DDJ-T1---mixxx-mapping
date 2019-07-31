@@ -1,978 +1,1199 @@
 <?xml version='1.0' encoding='utf-8'?>
 <MixxxControllerPreset schemaVersion="1" mixxxVersion="2.1+">
-    <info>
-        <name>Pioneer DDJ-T1</name>
-        <author>kumy, sibelius84</author>
-        <description>Pioneer DDJ-T1</description>
-    </info>
-    <controller id="pioneer-ddj-t1">
-        <scriptfiles>
-            <file filename="lodash.mixxx.js"/>
-            <file filename="midi-components-0.0.js"/>
-            <file filename="Pioneer-DDJ-T1-script.js" functionprefix="DDJ"/>
-        </scriptfiles>
+  <info>
+    <name>AA Pioneer DDJ-T1-kumy X</name>
+    <author>kumy, mike</author>
+    <description>Pioneer DDJ-T1 controller mapping</description>
+  </info>
+  <controller id="PIONEER">
+    <scriptfiles>
+      <file filename="lodash.mixxx.js"/>
+      <file filename="midi-components-0.0.js"/>
+      <file filename="PIONEER_DDJ-T1_MIDI_1.script.js" functionprefix="DDJ"/>
+    </scriptfiles>
 
-        <controls>
+    <!-- play buttons -->
 
-            <!-- play/pause -->
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.deckA.playButton.input</key>
-                <description>Left Deck A play button.</description>
-                <status>0x90</status>
-                <midino>0x0B</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.deckB.playButton.input</key>
-                <description>Right Deck B play button.</description>
-                <status>0x91</status>
-                <midino>0x0B</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.deckC.playButton.input</key>
-                <description>Left Deck C play button.</description>
-                <status>0x92</status>
-                <midino>0x0B</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.deckD.playButton.input</key>
-                <description>Right Deck D play button.</description>
-                <status>0x93</status>
-                <midino>0x0B</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+    <controls>
 
-            <!-- cue -->
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.deckA.cueButton.input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x90</status>
-                <midino>0x0C</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.deckB.cueButton.input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x91</status>
-                <midino>0x0C</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.deckC.cueButton.input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x92</status>
-                <midino>0x0C</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.deckD.cueButton.input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x93</status>
-                <midino>0x0C</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+      <!-- play/pause -->
+      <control>
+        <group>[Channel1]</group>
+        <key>DDJ.deckA.playButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x90</status>
+        <midino>0x0B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>DDJ.deckB.playButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x91</status>
+        <midino>0x0B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>DDJ.deckC.playButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x92</status>
+        <midino>0x0B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>DDJ.deckD.playButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x93</status>
+        <midino>0x0B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
 
-            <!-- crossfader -->
-            <control>
-                <group>[Master]</group>
-                <key>crossfader</key>
-                <description>MIDI Learned from 302 messages.</description>
-                <status>0xB6</status>
-                <midino>0x1F</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
+      <!-- cue -->
+      <control>
+        <group>[Channel1]</group>
+        <key>DDJ.deckA.cueButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x90</status>
+        <midino>0x0C</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>DDJ.deckB.cueButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x91</status>
+        <midino>0x0C</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>DDJ.deckC.cueButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x92</status>
+        <midino>0x0C</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>DDJ.deckD.cueButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x93</status>
+        <midino>0x0C</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
 
-            <!-- keylock button -->
-            <control>
-                <group>[Channel1]</group>
-                <key>keylock</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x90</status>
-                <midino>0x1A</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>keylock</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x91</status>
-                <midino>0x1A</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>keylock</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x92</status>
-                <midino>0x1A</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>keylock</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x93</status>
-                <midino>0x1A</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
+      <!-- crossfader -->
+      <control>
+        <group>[Master]</group>
+        <key>crossfader</key>
+        <description>MIDI Learned from 302 messages.</description>
+        <status>0xB6</status>
+        <midino>0x1F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- sync button -->
-            <control>
-                <group>[Channel1]</group>
-                <key>sync_enabled</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x96</status>
-                <midino>0x58</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>sync_enabled</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x96</status>
-                <midino>0x59</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>sync_enabled</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x96</status>
-                <midino>0x5A</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>sync_enabled</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x96</status>
-                <midino>0x5B</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
+      <!-- keylock button -->
+      <control>
+        <group>[Channel1]</group>
+        <key>keylock</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x90</status>
+        <midino>0x1A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>keylock</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x91</status>
+        <midino>0x1A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>keylock</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x92</status>
+        <midino>0x1A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>keylock</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x93</status>
+        <midino>0x1A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- preview listen - pfl -->
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.deckA.pflButton.input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x96</status>
-                <midino>0x54</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.deckB.pflButton.input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x96</status>
-                <midino>0x55</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.deckC.pflButton.input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x96</status>
-                <midino>0x56</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.deckD.pflButton.input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x96</status>
-                <midino>0x57</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+      <!-- sync button -->
+      <control>
+        <group>[Channel1]</group>
+        <key>sync_enabled</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x96</status>
+        <midino>0x58</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>sync_enabled</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x96</status>
+        <midino>0x59</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>sync_enabled</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x96</status>
+        <midino>0x5A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>sync_enabled</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x96</status>
+        <midino>0x5B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- autoloop -->
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.autoLoopFunc</key>
-                <description>Autoloop button.</description>
-                <status>0xB0</status>
-                <midino>0x13</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.autoLoopFunc</key>
-                <description>Autoloop button.</description>
-                <status>0xB1</status>
-                <midino>0x13</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.autoLoopFunc</key>
-                <description>Autoloop button.</description>
-                <status>0xB2</status>
-                <midino>0x13</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.autoLoopFunc</key>
-                <description>Autoloop button.</description>
-                <status>0xB3</status>
-                <midino>0x13</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+      <!-- preview listen - pfl -->
+      <control>
+        <group>[Channel1]</group>
+        <key>DDJ.deckA.pflButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x96</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>DDJ.deckB.pflButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x96</status>
+        <midino>0x55</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>DDJ.deckC.pflButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x96</status>
+        <midino>0x56</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>DDJ.deckD.pflButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x96</status>
+        <midino>0x57</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
 
-            <!-- pfl gain -->
-            <control>
-                <group>[Channel1]</group>
-                <key>pregain</key>
-                <description>MIDI Learned from 287 messages.</description>
-                <status>0xB6</status>
-                <midino>0x03</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>pregain</key>
-                <description>MIDI Learned from 222 messages.</description>
-                <status>0xB6</status>
-                <midino>0x04</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>pregain</key>
-                <description>MIDI Learned from 429 messages.</description>
-                <status>0xB6</status>
-                <midino>0x05</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>pregain</key>
-                <description>MIDI Learned from 684 messages.</description>
-                <status>0xB6</status>
-                <midino>0x06</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
+      <!-- autoloop -->
+      <control>
+        <group>[Channel1]</group>
+        <key>DDJ.autoLoopFunc</key>
+        <description>Autoloop button.</description>
+        <status>0xB0</status>
+        <midino>0x13</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>DDJ.autoLoopFunc</key>
+        <description>Autoloop button.</description>
+        <status>0xB1</status>
+        <midino>0x13</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>DDJ.autoLoopFunc</key>
+        <description>Autoloop button.</description>
+        <status>0xB2</status>
+        <midino>0x13</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>DDJ.autoLoopFunc</key>
+        <description>Autoloop button.</description>
+        <status>0xB3</status>
+        <midino>0x13</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
 
-            <!-- equaliser deck A -->
-            <control>
-                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
-                <key>parameter1</key>
-                <description>eq high.</description>
-                <status>0xB6</status>
-                <midino>0x0F</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
-                <key>parameter2</key>
-                <description>eq med.</description>
-                <status>0xB6</status>
-                <midino>0x0B</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
-                <key>parameter3</key>
-                <description>eq low.</description>
-                <status>0xB6</status>
-                <midino>0x07</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
+      <!-- pfl gain -->
+      <control>
+        <group>[Channel1]</group>
+        <key>pregain</key>
+        <description>MIDI Learned from 287 messages.</description>
+        <status>0xB6</status>
+        <midino>0x03</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>pregain</key>
+        <description>MIDI Learned from 222 messages.</description>
+        <status>0xB6</status>
+        <midino>0x04</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>pregain</key>
+        <description>MIDI Learned from 429 messages.</description>
+        <status>0xB6</status>
+        <midino>0x05</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>pregain</key>
+        <description>MIDI Learned from 684 messages.</description>
+        <status>0xB6</status>
+        <midino>0x06</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- equaliser Deck B -->
-            <control>
-                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
-                <key>parameter2</key>
-                <description>MIDI Learned from 218 messages.</description>
-                <status>0xB6</status>
-                <midino>0x0C</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
-                <key>parameter3</key>
-                <description>MIDI Learned from 90 messages.</description>
-                <status>0xB6</status>
-                <midino>0x08</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
-                <key>parameter1</key>
-                <description>MIDI Learned from 276 messages.</description>
-                <status>0xB6</status>
-                <midino>0x10</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
+      <!-- equaliser deck A -->
+      <control>
+        <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+        <key>parameter1</key>
+        <description>eq high.</description>
+        <status>0xB6</status>
+        <midino>0x0F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+        <key>parameter2</key>
+        <description>eq med.</description>
+        <status>0xB6</status>
+        <midino>0x0B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+        <key>parameter3</key>
+        <description>eq low.</description>
+        <status>0xB6</status>
+        <midino>0x07</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- equaliser Deck C -->
-            <control>
-                <group>[EqualizerRack1_[Channel3]_Effect1]</group>
-                <key>parameter2</key>
-                <description>MIDI Learned from 214 messages.</description>
-                <status>0xB6</status>
-                <midino>0x0D</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel3]_Effect1]</group>
-                <key>parameter3</key>
-                <description>MIDI Learned from 109 messages.</description>
-                <status>0xB6</status>
-                <midino>0x09</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel3]_Effect1]</group>
-                <key>parameter1</key>
-                <description>MIDI Learned from 498 messages.</description>
-                <status>0xB6</status>
-                <midino>0x11</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
+      <!-- equaliser Deck B -->
+      <control>
+        <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+        <key>parameter2</key>
+        <description>MIDI Learned from 218 messages.</description>
+        <status>0xB6</status>
+        <midino>0x0C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+        <key>parameter3</key>
+        <description>MIDI Learned from 90 messages.</description>
+        <status>0xB6</status>
+        <midino>0x08</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+        <key>parameter1</key>
+        <description>MIDI Learned from 276 messages.</description>
+        <status>0xB6</status>
+        <midino>0x10</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- equaliser Deck D -->
-            <control>
-                <group>[EqualizerRack1_[Channel4]_Effect1]</group>
-                <key>parameter3</key>
-                <description>MIDI Learned from 91 messages.</description>
-                <status>0xB6</status>
-                <midino>0x0A</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel4]_Effect1]</group>
-                <key>parameter1</key>
-                <description>MIDI Learned from 336 messages.</description>
-                <status>0xB6</status>
-                <midino>0x12</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[EqualizerRack1_[Channel4]_Effect1]</group>
-                <key>parameter2</key>
-                <description>MIDI Learned from 220 messages.</description>
-                <status>0xB6</status>
-                <midino>0x0E</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
+      <!-- equaliser Deck C -->
+      <control>
+        <group>[EqualizerRack1_[Channel3]_Effect1]</group>
+        <key>parameter2</key>
+        <description>MIDI Learned from 214 messages.</description>
+        <status>0xB6</status>
+        <midino>0x0D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[EqualizerRack1_[Channel3]_Effect1]</group>
+        <key>parameter3</key>
+        <description>MIDI Learned from 109 messages.</description>
+        <status>0xB6</status>
+        <midino>0x09</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[EqualizerRack1_[Channel3]_Effect1]</group>
+        <key>parameter1</key>
+        <description>MIDI Learned from 498 messages.</description>
+        <status>0xB6</status>
+        <midino>0x11</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- mixer effects -->
-            <control>
-                <group>[QuickEffectRack1_[Channel1]]</group>
-                <key>super1</key>
-                <description>MIDI Learned from 134 messages.</description>
-                <status>0xB0</status>
-                <midino>0x04</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[QuickEffectRack1_[Channel2]]</group>
-                <key>super1</key>
-                <description>MIDI Learned from 348 messages.</description>
-                <status>0xB1</status>
-                <midino>0x04</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[QuickEffectRack1_[Channel3]]</group>
-                <key>super1</key>
-                <description>MIDI Learned from 522 messages.</description>
-                <status>0xB2</status>
-                <midino>0x04</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[QuickEffectRack1_[Channel4]]</group>
-                <key>super1</key>
-                <description>MIDI Learned from 1564 messages.</description>
-                <status>0xB3</status>
-                <midino>0x04</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
+      <!-- equaliser Deck D -->
+      <control>
+        <group>[EqualizerRack1_[Channel4]_Effect1]</group>
+        <key>parameter3</key>
+        <description>MIDI Learned from 91 messages.</description>
+        <status>0xB6</status>
+        <midino>0x0A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[EqualizerRack1_[Channel4]_Effect1]</group>
+        <key>parameter1</key>
+        <description>MIDI Learned from 336 messages.</description>
+        <status>0xB6</status>
+        <midino>0x12</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[EqualizerRack1_[Channel4]_Effect1]</group>
+        <key>parameter2</key>
+        <description>MIDI Learned from 220 messages.</description>
+        <status>0xB6</status>
+        <midino>0x0E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- Deck volumes -->
-            <control>
-                <group>[Channel1]</group>
-                <key>volume</key>
-                <description>MIDI Learned from 291 messages.</description>
-                <status>0xB6</status>
-                <midino>0x13</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>volume</key>
-                <description>MIDI Learned from 984 messages.</description>
-                <status>0xB6</status>
-                <midino>0x15</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>volume</key>
-                <description>MIDI Learned from 442 messages.</description>
-                <status>0xB6</status>
-                <midino>0x17</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>volume</key>
-                <description>MIDI Learned from 236 messages.</description>
-                <status>0xB6</status>
-                <midino>0x19</midino>
-                <options>
-                    <normal/>
-                </options>
-            </control>
+      <!-- mixer effects -->
+      <control>
+        <group>[QuickEffectRack1_[Channel1]]</group>
+        <key>super1</key>
+        <description>MIDI Learned from 134 messages.</description>
+        <status>0xB0</status>
+        <midino>0x04</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[QuickEffectRack1_[Channel2]]</group>
+        <key>super1</key>
+        <description>MIDI Learned from 348 messages.</description>
+        <status>0xB1</status>
+        <midino>0x04</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[QuickEffectRack1_[Channel3]]</group>
+        <key>super1</key>
+        <description>MIDI Learned from 522 messages.</description>
+        <status>0xB2</status>
+        <midino>0x04</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[QuickEffectRack1_[Channel4]]</group>
+        <key>super1</key>
+        <description>MIDI Learned from 1564 messages.</description>
+        <status>0xB3</status>
+        <midino>0x04</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- hot cues buttons Deck A -->
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.deckA.hotcues[1].input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x90</status>
-                <midino>0x2E</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.deckA.hotcues[2].input</key>
-                <description>MIDI Learned from 4 messages.</description>
-                <status>0x90</status>
-                <midino>0x2F</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.deckA.hotcues[3].input</key>
-                <description>MIDI Learned from 6 messages.</description>
-                <status>0x90</status>
-                <midino>0x30</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.deckA.hotcues[4].input</key>
-                <description>MIDI Learned from 8 messages.</description>
-                <status>0x90</status>
-                <midino>0x31</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+      <!-- Deck volumes -->
+      <control>
+        <group>[Channel1]</group>
+        <key>volume</key>
+        <description>MIDI Learned from 291 messages.</description>
+        <status>0xB6</status>
+        <midino>0x13</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>volume</key>
+        <description>MIDI Learned from 984 messages.</description>
+        <status>0xB6</status>
+        <midino>0x15</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>volume</key>
+        <description>MIDI Learned from 442 messages.</description>
+        <status>0xB6</status>
+        <midino>0x17</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>volume</key>
+        <description>MIDI Learned from 236 messages.</description>
+        <status>0xB6</status>
+        <midino>0x19</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- hot cues buttons Deck B -->
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.deckB.hotcues[1].input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x91</status>
-                <midino>0x2E</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.deckB.hotcues[2].input</key>
-                <description>MIDI Learned from 4 messages.</description>
-                <status>0x91</status>
-                <midino>0x2F</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.deckB.hotcues[3].input</key>
-                <description>MIDI Learned from 6 messages.</description>
-                <status>0x91</status>
-                <midino>0x30</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.deckB.hotcues[4].input</key>
-                <description>MIDI Learned from 8 messages.</description>
-                <status>0x91</status>
-                <midino>0x31</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+      <!-- hot cues buttons Deck A -->
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_1_activate</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x90</status>
+        <midino>0x2E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_2_activate</key>
+        <description>MIDI Learned from 4 messages.</description>
+        <status>0x90</status>
+        <midino>0x2F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_3_activate</key>
+        <description>MIDI Learned from 6 messages.</description>
+        <status>0x90</status>
+        <midino>0x30</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_4_activate</key>
+        <description>MIDI Learned from 8 messages.</description>
+        <status>0x90</status>
+        <midino>0x31</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- hot cues buttons Deck C -->
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.deckC.hotcues[1].input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x92</status>
-                <midino>0x2E</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.deckC.hotcues[2].input</key>
-                <description>MIDI Learned from 4 messages.</description>
-                <status>0x92</status>
-                <midino>0x2F</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.deckC.hotcues[3].input</key>
-                <description>MIDI Learned from 6 messages.</description>
-                <status>0x92</status>
-                <midino>0x30</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.deckC.hotcues[4].input</key>
-                <description>MIDI Learned from 8 messages.</description>
-                <status>0x92</status>
-                <midino>0x31</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+      <!-- hot cues buttons Deck B -->
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_1_activate</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x91</status>
+        <midino>0x2E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_2_activate</key>
+        <description>MIDI Learned from 4 messages.</description>
+        <status>0x91</status>
+        <midino>0x2F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_3_activate</key>
+        <description>MIDI Learned from 6 messages.</description>
+        <status>0x91</status>
+        <midino>0x30</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_4_activate</key>
+        <description>MIDI Learned from 8 messages.</description>
+        <status>0x91</status>
+        <midino>0x31</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- hot cues buttons Deck D -->
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.deckD.hotcues[1].input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x93</status>
-                <midino>0x2E</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.deckD.hotcues[2].input</key>
-                <description>MIDI Learned from 4 messages.</description>
-                <status>0x93</status>
-                <midino>0x2F</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.deckD.hotcues[3].input</key>
-                <description>MIDI Learned from 6 messages.</description>
-                <status>0x93</status>
-                <midino>0x30</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.deckD.hotcues[4].input</key>
-                <description>MIDI Learned from 8 messages.</description>
-                <status>0x93</status>
-                <midino>0x31</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+      <!-- hot cues buttons Deck C -->
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_1_activate</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x92</status>
+        <midino>0x2E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_2_activate</key>
+        <description>MIDI Learned from 4 messages.</description>
+        <status>0x92</status>
+        <midino>0x2F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_3_activate</key>
+        <description>MIDI Learned from 6 messages.</description>
+        <status>0x92</status>
+        <midino>0x30</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_4_activate</key>
+        <description>MIDI Learned from 8 messages.</description>
+        <status>0x92</status>
+        <midino>0x31</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- clear hot cues Deck A -->
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.deckA.hotcues[1].input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x90</status>
-                <midino>0x5F</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.deckA.hotcues[2].input</key>
-                <description>MIDI Learned from 4 messages.</description>
-                <status>0x90</status>
-                <midino>0x60</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.deckA.hotcues[3].input</key>
-                <description>MIDI Learned from 6 messages.</description>
-                <status>0x90</status>
-                <midino>0x61</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.deckA.hotcues[4].input</key>
-                <description>MIDI Learned from 8 messages.</description>
-                <status>0x90</status>
-                <midino>0x62</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+      <!-- hot cues buttons Deck D -->
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_1_activate</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x93</status>
+        <midino>0x2E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_2_activate</key>
+        <description>MIDI Learned from 4 messages.</description>
+        <status>0x93</status>
+        <midino>0x2F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_3_activate</key>
+        <description>MIDI Learned from 6 messages.</description>
+        <status>0x93</status>
+        <midino>0x30</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_4_activate</key>
+        <description>MIDI Learned from 8 messages.</description>
+        <status>0x93</status>
+        <midino>0x31</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- clear hot cues Deck B -->
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.deckB.hotcues[1].input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x91</status>
-                <midino>0x5F</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.deckB.hotcues[2].input</key>
-                <description>MIDI Learned from 4 messages.</description>
-                <status>0x91</status>
-                <midino>0x60</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.deckB.hotcues[3].input</key>
-                <description>MIDI Learned from 6 messages.</description>
-                <status>0x91</status>
-                <midino>0x61</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.deckB.hotcues[4].input</key>
-                <description>MIDI Learned from 8 messages.</description>
-                <status>0x91</status>
-                <midino>0x62</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+      <!-- clear hot cues Deck A -->
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_1_clear</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x90</status>
+        <midino>0x5F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_2_clear</key>
+        <description>MIDI Learned from 4 messages.</description>
+        <status>0x90</status>
+        <midino>0x60</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_3_clear</key>
+        <description>MIDI Learned from 6 messages.</description>
+        <status>0x90</status>
+        <midino>0x61</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_4_clear</key>
+        <description>MIDI Learned from 8 messages.</description>
+        <status>0x90</status>
+        <midino>0x62</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- clear hot cues Deck C -->
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.deckC.hotcues[1].input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x92</status>
-                <midino>0x5F</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.deckC.hotcues[2].input</key>
-                <description>MIDI Learned from 4 messages.</description>
-                <status>0x92</status>
-                <midino>0x60</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.deckC.hotcues[3].input</key>
-                <description>MIDI Learned from 6 messages.</description>
-                <status>0x92</status>
-                <midino>0x61</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.deckC.hotcues[4].input</key>
-                <description>MIDI Learned from 8 messages.</description>
-                <status>0x92</status>
-                <midino>0x62</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+      <!-- clear hot cues Deck B -->
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_1_clear</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x91</status>
+        <midino>0x5F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_2_clear</key>
+        <description>MIDI Learned from 4 messages.</description>
+        <status>0x91</status>
+        <midino>0x60</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_3_clear</key>
+        <description>MIDI Learned from 6 messages.</description>
+        <status>0x91</status>
+        <midino>0x61</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_4_clear</key>
+        <description>MIDI Learned from 8 messages.</description>
+        <status>0x91</status>
+        <midino>0x62</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- clear hot cues Deck D -->
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.deckD.hotcues[1].input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x93</status>
-                <midino>0x5F</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.deckD.hotcues[2].input</key>
-                <description>MIDI Learned from 4 messages.</description>
-                <status>0x93</status>
-                <midino>0x60</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.deckD.hotcues[3].input</key>
-                <description>MIDI Learned from 6 messages.</description>
-                <status>0x93</status>
-                <midino>0x61</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.deckD.hotcues[4].input</key>
-                <description>MIDI Learned from 8 messages.</description>
-                <status>0x93</status>
-                <midino>0x62</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+      <!-- clear hot cues Deck C -->
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_1_clear</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x92</status>
+        <midino>0x5F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_2_clear</key>
+        <description>MIDI Learned from 4 messages.</description>
+        <status>0x92</status>
+        <midino>0x60</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_3_clear</key>
+        <description>MIDI Learned from 6 messages.</description>
+        <status>0x92</status>
+        <midino>0x61</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_4_clear</key>
+        <description>MIDI Learned from 8 messages.</description>
+        <status>0x92</status>
+        <midino>0x62</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- SHIFT cue -->
-            <control>
-                <group>[Channel1]</group>
-                <key>DDJ.deckA.cueButton.input</key>
-                <description>MIDI Learned from 2 messages.</description>
-                <status>0x90</status>
-                <midino>0x48</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel2]</group>
-                <key>DDJ.deckB.cueButton.input</key>
-                <description>MIDI Learned from 4 messages.</description>
-                <status>0x91</status>
-                <midino>0x48</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel3]</group>
-                <key>DDJ.deckC.cueButton.input</key>
-                <description>MIDI Learned from 6 messages.</description>
-                <status>0x92</status>
-                <midino>0x48</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
-            <control>
-                <group>[Channel4]</group>
-                <key>DDJ.deckD.cueButton.input</key>
-                <description>MIDI Learned from 8 messages.</description>
-                <status>0x93</status>
-                <midino>0x48</midino>
-                <options>
-                    <script-binding/>
-                </options>
-            </control>
+      <!-- clear hot cues Deck D -->
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_1_clear</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x93</status>
+        <midino>0x5F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_2_clear</key>
+        <description>MIDI Learned from 4 messages.</description>
+        <status>0x93</status>
+        <midino>0x60</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_3_clear</key>
+        <description>MIDI Learned from 6 messages.</description>
+        <status>0x93</status>
+        <midino>0x61</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_4_clear</key>
+        <description>MIDI Learned from 8 messages.</description>
+        <status>0x93</status>
+        <midino>0x62</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-        </controls>
-        <outputs>
+      <!-- SHIFT cue -->
+      <control>
+        <group>[Channel1]</group>
+        <key>DDJ.deckA.cueButton.input</key>
+        <description>MIDI Learned from 2 messages.</description>
+        <status>0x90</status>
+        <midino>0x48</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>DDJ.deckB.cueButton.input</key>
+        <description>MIDI Learned from 4 messages.</description>
+        <status>0x91</status>
+        <midino>0x48</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>DDJ.deckC.cueButton.input</key>
+        <description>MIDI Learned from 6 messages.</description>
+        <status>0x92</status>
+        <midino>0x48</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>DDJ.deckD.cueButton.input</key>
+        <description>MIDI Learned from 8 messages.</description>
+        <status>0x93</status>
+        <midino>0x48</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
 
-            <!-- keylock led -->
-            <output>
-                <group>[Channel1]</group>
-                <key>keylock</key>
-                <status>0x90</status>
-                <midino>0x1A</midino>
-                <minimum>0.5</minimum>
-            </output>
-            <output>
-                <group>[Channel2]</group>
-                <key>keylock</key>
-                <status>0x91</status>
-                <midino>0x1A</midino>
-                <minimum>0.5</minimum>
-            </output>
-            <output>
-                <group>[Channel3]</group>
-                <key>keylock</key>
-                <status>0x92</status>
-                <midino>0x1A</midino>
-                <minimum>0.5</minimum>
-            </output>
-            <output>
-                <group>[Channel4]</group>
-                <key>keylock</key>
-                <status>0x93</status>
-                <midino>0x1A</midino>
-                <minimum>0.5</minimum>
-            </output>
+    </controls>
+    <outputs>
+      <!--output> <group>[Channel1]</group> <key>play_indicator</key> <status>0x90</status> <midino>0x0B</midino> <minimum>0.5</minimum> </output> <output> <group>[Channel1]</group> <key>cue_indicator</key> <status>0x90</status> <midino>0x0C</midino>
+      <minimum>0.5</minimum> </output> <output> <group>[Channel2]</group> <key>play_indicator</key> <status>0x91</status> <midino>0x0B</midino> <minimum>0.5</minimum> </output> <output> <group>[Channel2]</group> <key>cue_indicator</key>
+      <status>0x91</status> <midino>0x0C</midino> <minimum>0.5</minimum> </output> <output> <group>[Channel3]</group> <key>play_indicator</key> <status>0x92</status> <midino>0x0B</midino> <minimum>0.5</minimum> </output> <output> <group>[Channel3]</group>
+      <key>cue_indicator</key> <status>0x92</status> <midino>0x0C</midino> <minimum>0.5</minimum> </output> <output> <group>[Channel4]</group> <key>play_indicator</key> <status>0x93</status> <midino>0x0B</midino> <minimum>0.5</minimum> </output> <output>
+      <group>[Channel4]</group> <key>cue_indicator</key> <status>0x93</status> <midino>0x0C</midino> <minimum>0.5</minimum> </output-->
 
-            <!-- sync led -->
-            <output>
-                <group>[Channel1]</group>
-                <key>sync_enabled</key>
-                <status>0x96</status>
-                <midino>0x58</midino>
-                <minimum>0.5</minimum>
-            </output>
-            <output>
-                <group>[Channel2]</group>
-                <key>sync_enabled</key>
-                <status>0x96</status>
-                <midino>0x59</midino>
-                <minimum>0.5</minimum>
-            </output>
-            <output>
-                <group>[Channel3]</group>
-                <key>sync_enabled</key>
-                <status>0x96</status>
-                <midino>0x5A</midino>
-                <minimum>0.5</minimum>
-            </output>
-            <output>
-                <group>[Channel4]</group>
-                <key>sync_enabled</key>
-                <status>0x96</status>
-                <midino>0x5B</midino>
-                <minimum>0.5</minimum>
-            </output>
+      <!-- <output> <group>[Channel1]</group> <key>pfl</key> <status>0x96</status> <midino>0x54</midino> <minimum>0.5</minimum> </output> <output> <group>[Channel2]</group> <key>pfl</key> <status>0x96</status> <midino>0x55</midino> <minimum>0.5</minimum>
+      </output> <output> <group>[Channel3]</group> <key>pfl</key> <status>0x96</status> <midino>0x56</midino> <minimum>0.5</minimum> </output> <output> <group>[Channel4]</group> <key>pfl</key> <status>0x96</status> <midino>0x57</midino>
+      <minimum>0.5</minimum> </output> -->
 
-        </outputs>
-    </controller>
+      <output>
+        <group>[Channel3]</group>
+        <key>keylock</key>
+        <status>0x92</status>
+        <midino>0x1A</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel4]</group>
+        <key>keylock</key>
+        <status>0x93</status>
+        <midino>0x1A</midino>
+        <minimum>0.5</minimum>
+      </output>
+
+      <output>
+        <group>[Channel3]</group>
+        <key>sync_enabled</key>
+        <status>0x96</status>
+        <midino>0x5A</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel4]</group>
+        <key>sync_enabled</key>
+        <status>0x96</status>
+        <midino>0x5B</midino>
+        <minimum>0.5</minimum>
+      </output>
+
+      <!-- hot cues buttons Deck A -->
+      <output>
+        <group>[Channel1]</group>
+        <key>hotcue_1_enabled</key>
+        <status>0x90</status>
+        <midino>0x2E</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel1]</group>
+        <key>hotcue_2_enabled</key>
+        <status>0x90</status>
+        <midino>0x2F</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel1]</group>
+        <key>hotcue_3_enabled</key>
+        <status>0x90</status>
+        <midino>0x30</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel1]</group>
+        <key>hotcue_4_enabled</key>
+        <status>0x90</status>
+        <midino>0x31</midino>
+        <minimum>0.5</minimum>
+      </output>
+
+      <!-- hot cues SHIFT buttons Deck A -->
+      <output>
+        <group>[Channel1]</group>
+        <key>hotcue_1_enabled</key>
+        <status>0x90</status>
+        <midino>0x5F</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel1]</group>
+        <key>hotcue_2_enabled</key>
+        <status>0x90</status>
+        <midino>0x60</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel1]</group>
+        <key>hotcue_3_enabled</key>
+        <status>0x90</status>
+        <midino>0x61</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel1]</group>
+        <key>hotcue_4_enabled</key>
+        <status>0x90</status>
+        <midino>0x62</midino>
+        <minimum>0.5</minimum>
+      </output>
+
+      <!-- hot cues buttons Deck B -->
+      <output>
+        <group>[Channel2]</group>
+        <key>hotcue_1_enabled</key>
+        <status>0x91</status>
+        <midino>0x2E</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel2]</group>
+        <key>hotcue_2_enabled</key>
+        <status>0x91</status>
+        <midino>0x2F</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel2]</group>
+        <key>hotcue_3_enabled</key>
+        <status>0x91</status>
+        <midino>0x30</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel2]</group>
+        <key>hotcue_4_enabled</key>
+        <status>0x91</status>
+        <midino>0x31</midino>
+        <minimum>0.5</minimum>
+      </output>
+
+      <!-- hot cues SHIFT buttons Deck B -->
+      <output>
+        <group>[Channel2]</group>
+        <key>hotcue_1_enabled</key>
+        <status>0x91</status>
+        <midino>0x5F</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel2]</group>
+        <key>hotcue_2_enabled</key>
+        <status>0x91</status>
+        <midino>0x60</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel2]</group>
+        <key>hotcue_3_enabled</key>
+        <status>0x91</status>
+        <midino>0x61</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel2]</group>
+        <key>hotcue_4_enabled</key>
+        <status>0x91</status>
+        <midino>0x62</midino>
+        <minimum>0.5</minimum>
+      </output>
+
+      <!-- hot cues buttons Deck C -->
+      <output>
+        <group>[Channel3]</group>
+        <key>hotcue_1_enabled</key>
+        <status>0x92</status>
+        <midino>0x2E</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel3]</group>
+        <key>hotcue_2_enabled</key>
+        <status>0x92</status>
+        <midino>0x2F</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel3]</group>
+        <key>hotcue_3_enabled</key>
+        <status>0x92</status>
+        <midino>0x30</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel3]</group>
+        <key>hotcue_4_enabled</key>
+        <status>0x92</status>
+        <midino>0x31</midino>
+        <minimum>0.5</minimum>
+      </output>
+
+      <!-- hot cues SHIFT buttons Deck C -->
+      <output>
+        <group>[Channel3]</group>
+        <key>hotcue_1_enabled</key>
+        <status>0x92</status>
+        <midino>0x5F</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel3]</group>
+        <key>hotcue_2_enabled</key>
+        <status>0x92</status>
+        <midino>0x60</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel3]</group>
+        <key>hotcue_3_enabled</key>
+        <status>0x92</status>
+        <midino>0x61</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel3]</group>
+        <key>hotcue_4_enabled</key>
+        <status>0x92</status>
+        <midino>0x62</midino>
+        <minimum>0.5</minimum>
+      </output>
+
+      <!-- hot cues buttons Deck D -->
+      <output>
+        <group>[Channel4]</group>
+        <key>hotcue_1_enabled</key>
+        <status>0x93</status>
+        <midino>0x2E</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel4]</group>
+        <key>hotcue_2_enabled</key>
+        <status>0x93</status>
+        <midino>0x2F</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel4]</group>
+        <key>hotcue_3_enabled</key>
+        <status>0x93</status>
+        <midino>0x30</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel4]</group>
+        <key>hotcue_4_enabled</key>
+        <status>0x93</status>
+        <midino>0x31</midino>
+        <minimum>0.5</minimum>
+      </output>
+
+      <!-- hot cues SHIFT buttons Deck D -->
+      <output>
+        <group>[Channel4]</group>
+        <key>hotcue_1_enabled</key>
+        <status>0x93</status>
+        <midino>0x5F</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel4]</group>
+        <key>hotcue_2_enabled</key>
+        <status>0x93</status>
+        <midino>0x60</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel4]</group>
+        <key>hotcue_3_enabled</key>
+        <status>0x93</status>
+        <midino>0x61</midino>
+        <minimum>0.5</minimum>
+      </output>
+      <output>
+        <group>[Channel4]</group>
+        <key>hotcue_4_enabled</key>
+        <status>0x93</status>
+        <midino>0x62</midino>
+        <minimum>0.5</minimum>
+      </output>
+
+    </outputs>
+  </controller>
 </MixxxControllerPreset>
